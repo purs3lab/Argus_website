@@ -42,22 +42,17 @@
             <h2 class="add-top-margin">ARGUS Overview</h2>
             <hr>
             <p style="font-size:14pt;">
-              ARGUS is a static taint tracker build to detect code injection vulnerabilities inside GitHub Workflows. Argus can track the dangerous sources across workflow configuration and JavaScript actions. 
-              You can see examples page to see the type of vulnerabilities Argus can detect.
+              ARGUS is a groundbreaking static taint analysis system specifically designed to identify code injection vulnerabilities in GitHub Actions. It is the first of its kind, offering a unique approach to securing Continuous Integration/Continuous Deployment (CI/CD) pipelines.
             </p>
-            <h2 class="add-top-margin">Getting Started</h2>
             <p style="font-size:14pt;">
-              To improve the usability of Argus for developers, we created Docker image that contains all the required dependencies to run Argus and detect code injection vulnerabilities inside the workflows. 
-              <br>
-              Following are step-by-step instructions on how to run Argus:
-
-              <ol>
-                <li>docker-compose build</li>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
-              </ol>
-
+              The system operates by tracking the flow of untrusted data across workflows and their associated actions, thereby identifying potential vulnerabilities. ARGUS has been meticulously tested on a large scale, analyzing over 2.7 million workflows and more than 31,000 actions. The results of this evaluation revealed critical code injection vulnerabilities in thousands of workflows and actions, highlighting the pervasive nature of such vulnerabilities in the GitHub Actions ecosystem.
+            </p>
+            <p style="font-size:14pt;">
+              ARGUS not only outperforms existing pattern-based vulnerability scanners but also underscores the necessity of taint analysis for effective vulnerability detection. The development and implementation of ARGUS represent a significant stride towards enhancing the security of GitHub Actions and CI/CD pipelines at large.
+            </p>
+            <h2 class="add-top-margin">Code</h2>
+            <p style="font-size:14pt;">
+              Our tool is opensourced on <a href="https://github.com/purs3lab/ARGUS" target="_blank"> GitHub</a>. Please check out the repository for more details. 
             </p>
 			<pre>
         @inproceedings{muralee2021Argus,
