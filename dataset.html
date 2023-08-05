@@ -2,16 +2,16 @@
 <html>
 
 <head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EER1LDV4TH"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EER1LDV4TH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-	gtag('config', 'G-EER1LDV4TH');
-	</script>
-  <title>PatchDB</title>
+    gtag('config', 'G-EER1LDV4TH');
+  </script>
+  <title>ARGUS</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" media="screen" rel="stylesheet" type="text/css" />
@@ -28,18 +28,11 @@
   <script src="js/widgets.js"></script>
   <script src="js/custom.js"></script>
   <style>
-    .menu-examples {
+    .menu-download {
       color: rgb(255, 255, 255) !important;
       opacity: 1 !important;
       font-weight: 700 !important;
     }
-	pre {
-	  font-family: Consolas, "courier new";
-	  color: gray;
-	  background-color: #f1f1f1;
-	  padding: 10px;
-	  font-size: 90%;
-	}
   </style>
 </head>
 
@@ -51,19 +44,86 @@
         <!-------------------------------------------------------------------------------------------->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin"></h2>
+            <h2 class="add-top-margin">Argus Dataset Policy</h2>
             <hr>
             <p style="font-size:14pt;">
-				Security Patches contains multiple categories.
+            We are delighted to share the ARGUS dataset and believe it will be a valuable resource for your research. However, to prevent any potential misuse, we kindly request that you fill out a request form to confirm your identity and outline the scope of your research. Once we have verified these details, we will provide you with the download link for the ARGUS dataset.
+            </p>
+			<p style="font-size:16pt;"><strong>
+				Request Steps:
+			</strong></p>
+			<p style="font-size:14pt;">
+				<strong>1. Please open the <a href="https://forms.gle/SmzyqhtLNrvvZ8x37" target="_blank">online request form</a> in a browser.</strong><br />
+				Link to ARGUS Dataset Request Form: <a href="https://forms.gle/SmzyqhtLNrvvZ8x37" target="_blank">https://forms.gle/SmzyqhtLNrvvZ8x37</a><br />
+				(If you are unable to access the page, please contact us by email.)
 			</p>
+			<p style="font-size:14pt;">
+				<strong>2. Sign in to your Google account.</strong><br />
+				Since our request form and download link are facilitated by Google, please use your Gmail as the valid email to receive the form response.
+			</p>
+			<p style="font-size:14pt;">
+				<strong>3. In the request form, please include your name, affiliation, work email.</strong><br />
+				The information is needed for verification. <br />
+				Note that your request may be ignored if we are not able to determine your identity or affiliation. <br />
+				We do not share your personal information with any third parties.
+			</p>
+			<p style="font-size:14pt;">
+				<strong>4. Acknowledge all the information you provided is correct.</strong>
+			</p>
+			<p style="font-size:14pt;">
+				<strong>5. Read and acknowledge the <a href="#agreement">Disclaimer & Download Agreement</a>.</strong>
+			</p>
+			<p style="font-size:14pt;">
+				<strong>6. Submit the request form.</strong><br />
+				A request receipt will be emailed to the email address you provided. <br />
+				Once we verify your information, we will email the download link to you as soon as possible.
+			</p>
+			
+			
           </div>
         </div>
         <!-------------------------------------------------------------------------------------------->
+		<div class="flex-row">
+          <div class="flex-item flex-column" id="agreement">
+            <h2 class="add-top-margin">Disclaimer & Download Agreement</h2>
+			<hr>
+			<p style="font-size:14pt;">
+				To download the ARGUS dataset, you must agree with the items of the succeeding Disclaimer & Download Agreement. You should carefully read the following terms before submitting the ARGUS Dataset request form.
+			</p>
+			<ul>
+				<li style="font-size:14pt;">ARGUS Dataset is constructed and cross-checked by 2 experts that work in workflow security research. Due to the potential misclassification led by subjective factors, our members cannot guarantee a 100% accuracy for samples in the dataset.</li>
+				<br />
+				<li style="font-size:14pt;">The copyright of the dataset is owned by Purs3Lab.</li>
+				<br />
+				<li style="font-size:14pt;">The purpose of using the dataset should be non-commercial research and/or personal use. The dataset should not be used for commercial use and any profitable purpose.</li>
+				<br />
+				<li style="font-size:14pt;">The ARGUS dataset should not be re-selled or re-distributed. Anyone who has obtained ARGUS should not share the dataset with others without the permission from our team.</li>
+			</ul>
+		  </div>
+		</div>
+        <!-------------------------------------------------------------------------------------------->
+		<div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Citation</h2>
+			<hr>
+			<p style="font-size:14pt;">
+				If you are using our dataset for work that will result in a publication (thesis, dissertation, paper, article), please use the following citation:</p>
+			<pre>
+        @inproceedings{muralee2021Argus,
+          title={ARGUS: A Framework for Staged Static Taint Analysis of GitHub Workflows and Actions},
+          author={S. Muralee, I. Koishybayev, A. Nahapetyan, G. Tystahl, B. Reaves, A. Bianchi, W. Enck, 
+            A. Kapravelos, A. Machiry},
+          booktitle={32st USENIX Security Symposium (USENIX Security 23)},
+          year={2023},
+        }</pre>
+		  </div>
+		</div>
+		<!-------------------------------------------------------------------------------------------->
         <div class="flex-row">
           <div class="flex-item flex-item-stretch flex-column">
-			<br /><br />
+			<br />
             <p class="text text-small text-italic">
-				ARGUS | <span class="highlight-text">PurS3 Lab</span> at <span class="highlight-text">Purdue University</span> | <span class="highlight-text">PurSec Lab</span> at <span class="highlight-text">Purdue University</span> | <span class="highlight-text">WSPR Lab</span> at <span class="highlight-text">North Carolina State University</span>
+				      ARGUS | <span class="highlight-text">PurS3 Lab</span> at <span class="highlight-text">Purdue University</span> | <span class="highlight-text">PurSec Lab</span> at <span class="highlight-text">Purdue University</span> | <span class="highlight-text">WSPR Lab</span> at <span class="highlight-text">North Carolina State University</span>
             </p>
           </div>
         </div>
