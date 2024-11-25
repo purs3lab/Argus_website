@@ -36,49 +36,64 @@
     <div class="content">
       <div class="content-table flex-column">
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Intro-->
-		<div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 class="add-top-margin">ARGUS Overview</h2>
-            <hr>
-            <p style="font-size:14pt;">
-              ARGUS is a groundbreaking static taint analysis system specifically designed to identify code injection vulnerabilities in GitHub Actions. It is the first of its kind, offering a unique approach to securing Continuous Integration/Continuous Deployment (CI/CD) pipelines.
-            </p>
-            <p style="font-size:14pt;">
-              The system operates by tracking the flow of untrusted data across workflows and their associated actions, thereby identifying potential vulnerabilities. ARGUS has been meticulously tested on a large scale, analyzing over 2.7 million workflows and more than 31,000 actions. The results of this evaluation revealed critical code injection vulnerabilities in thousands of workflows and actions, highlighting the pervasive nature of such vulnerabilities in the GitHub Actions ecosystem.
-            </p>
-            <p style="font-size:14pt;">
-              ARGUS not only outperforms existing pattern-based vulnerability scanners but also underscores the necessity of taint analysis for effective vulnerability detection. The development and implementation of ARGUS represent a significant stride towards enhancing the security of GitHub Actions and CI/CD pipelines at large.
-            </p>
-            
-            <h2 class="add-top-margin"> Github's Blog </h2>
-            <p style="font-size:14pt;">
-             GitHub published a <a href="https://github.blog/2023-08-09-four-tips-to-keep-your-github-actions-workflows-secure/" target="_blank">blog post</a> about our findings and also mentioned our tool. We are grateful for the support provided by them throughout our research.
-            
-            <h2 class="add-top-margin">Code</h2>
-            <p style="font-size:14pt;">
-              Our tool is opensourced on <a href="https://github.com/purs3lab/ARGUS" target="_blank"> GitHub</a>. Please check out the repository for more details. 
-            </p>
-            <h2 class="add-top-margin">Bibtex</h2>
-			<pre>
-        @inproceedings{muralee2023Argus,
-          title={ARGUS: A Framework for Staged Static Taint Analysis of GitHub Workflows and Actions},
-          author={S. Muralee, I. Koishybayev, A. Nahapetyan, G. Tystahl, B. Reaves, A. Bianchi, W. Enck, 
-            A. Kapravelos, A. Machiry},
-          booktitle={32st USENIX Security Symposium (USENIX Security 23)},
-          year={2023},
-        }
-      </pre>
-		  </div>
-		  
-		  <!-- <div class="flex-item flex-column">
-			<p style="font-size:14pt;">Until now the following institutions were given access:</p>
-			<ol>
-			  
-			</ol>
-		  </div> -->
-        </div>
-        <!--End Intro-->
+    <!--Start Intro-->
+    <div class="flex-row">
+      <div class="flex-item flex-column">
+        <h2 class="add-top-margin">Overview</h2>
+        <hr>
+        <p style="font-size:14pt;">
+          Continuous Integration (CI) has become essential to the modern software development cycle. Developers engineer CI scripts, commonly called workflows or pipelines, to automate most software maintenance tasks, such as testing and deployment.
+        </p>
+        <p style="font-size:14pt;">
+          Developers frequently misconfigure workflows resulting in severe security issues, which can have devastating effects resulting in supply-chain attacks. The extreme diversity of CI platforms and the supported features further exacerbate the problem and make it challenging to specify and verify security properties across different CI platforms uniformly. In this area, we aim to addresses the problem by defining the desired security properties of a workflow and developing platform-independent techniques to verify and enforce the security properties.
+        </p>
+  </div>
+</div>
+    <!--End Intro-->
+
+    <!--Start Projects-->
+    <div class="flex-row">
+      <div class="flex-item flex-column">
+          <h2 class="add-top-margin">Projects</h2>
+          <hr>
+          <div style="display: flex;" class="project-container">
+              <!-- ARGUS Project -->
+              <div style="width: 45%;" class="project-item">
+                  <h3>ARGUS</h3>
+                  <p style="font-size:14pt;">
+                      ARGUS is a groundbreaking static taint analysis system specifically designed to identify code injection vulnerabilities in GitHub Actions. It is the first of its kind, offering a unique approach to securing Continuous Integration/Continuous Deployment (CI/CD) pipelines.
+                  </p>
+                  <div class="button-container">
+                    <a href="argus.html" class="custom-button">
+                      Learn about ARGUS
+                      <span class="arrow">›</span>
+                    </a>
+                  </div>
+                
+              </div>
+              <div style="width: 10%;" class="project-item">
+              </div>
+
+              <!-- LLM4GW Project -->
+              <div style="width: 45%;" class="project-item">
+                  <h3>LLM4GW</h3>
+                  <p style="font-size:14pt;">
+                      LLM4GW is the first comprehensive study to assess how effective Large Language Models (LLMs) are for tasks related to GitHub workflows.
+                  </p>
+                  <div class="button-container">
+                    <a href="LLM4GW.html" class="custom-button">
+                      Learn about LLM4GW
+                      <span class="arrow">›</span>
+                    </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!--End Projects-->
+
+
+
 		
 		
         <!-------------------------------------------------------------------------------------------->
@@ -88,7 +103,7 @@
             <h2 class="add-top-margin">Team</h2>
 			<hr>
 			<p style="font-size:14pt;">
-				The ARGUS is built by <a href="https://purs3lab.github.io/" target="_blank">Purdue Systems and Software Security Lab (PurS3) and  <a href="https://pursec.cs.purdue.edu/" target="_blank"> PurSec Lab  </a> at <a href="https://www2.purdue.edu/" target="_blank">Purdue University</a> <br/>  and <a href="https://wspr.csc.ncsu.edu/" target="_blank">Wolfpack Security and Privacy Research (WSPR)</a> lab at <a href="https://ncsu.edu" target="_blank"> North Carolina State University</a>.
+				Our projects are built by <a href="https://purs3lab.github.io/" target="_blank">Purdue Systems and Software Security Lab (PurS3) </a> and  <a href="https://pursec.cs.purdue.edu/" target="_blank"> PurSec Lab  </a> at <a href="https://www2.purdue.edu/" target="_blank">Purdue University</a> <br/>  and <a href="https://wspr.csc.ncsu.edu/" target="_blank">Wolfpack Security and Privacy Research (WSPR)</a> lab at <a href="https://ncsu.edu" target="_blank"> North Carolina State University</a>.
 			</p>
 			<div align="center" display="flex">    
 				<img src="./img/purdue.png" height = "120" alt="purdue" align="center" />
@@ -105,7 +120,7 @@
                   <h2 class="add-top-margin">Funding</h2>
                   <hr>
                   <p style="font-size:14pt;">
-                      We are greatful to the following sources for funding this project.
+                      We are greatful to the following sources for funding the projects.
                   </p>
                   <div align="center" display="flex">
                       <img src="./img/amazonara.png" height = "120" alt="purdue" align="center" />
@@ -121,7 +136,7 @@
           <div class="flex-item flex-item-stretch flex-column">
 			<br /><br />
             <p class="text text-small text-italic">
-              ARGUS | <span class="highlight-text">PurS3 Lab</span> at <span class="highlight-text">Purdue University</span> | <span class="highlight-text">PurSec Lab</span> at <span class="highlight-text">Purdue University</span> | <span class="highlight-text">WSPR Lab</span> at <span class="highlight-text">North Carolina State University</span>
+              SecureCI | <span class="highlight-text">PurS3 Lab</span> at <span class="highlight-text">Purdue University</span> | <span class="highlight-text">PurSec Lab</span> at <span class="highlight-text">Purdue University</span> | <span class="highlight-text">WSPR Lab</span> at <span class="highlight-text">North Carolina State University</span>
             </p>
           </div>
         </div>

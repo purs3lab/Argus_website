@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EER1LDV4TH"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-EER1LDV4TH');
+	</script>
+  <title>LLM4GW</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start LLM4GW-->
+		<div class="flex-row">
+      <div class="flex-item flex-column">
+        <h2 class="add-top-margin">LLM4GW</h2>
+        <hr>
+        <p style="font-size:14pt;">
+          LLM4GW is the first comprehensive study to assess how effective Large Language Models (LLMs) are for tasks related to GitHub workflows. While LLMs have shown effectiveness in software development tasks like coding and testing, GitHub workflows are distinct from regular code in terms of structure, semantics, and security properties. 
+        </p>
+        <p style="font-size:14pt;">
+          We curated a dataset of around 400,000 workflows based on ARGUS dataset, generated prompts with varying levels of detail, and fine-tuned three state-of-the-art LLMs: GPT-3.5, CodeLlama, and StarChat. We evaluated the performance of these LLMs, both off-the-shelf and fine-tuned, on five workflow-related tasks: workflow generation, defect detection (syntactic errors and code injection vulnerabilities), and defect repair. The evaluation encompassed different prompting modes (zero-shot, one-shot) and involved identifying the best-performing temperature value and prompt for each LLM and task.
+        </p>
+        <p style="font-size:14pt;">
+          The study revealed that, unlike regular code generation, LLMs require detailed prompts to generate the desired workflows, but these detailed prompts can lead to invalid workflows with syntactic errors. Additionally, the LLMs were found to produce workflows with code injection vulnerabilities. The research also highlights the need for novel LLM-assisted techniques, as the current LLMs were found to be ineffective at repairing workflow defects. 
+        </p>
+
+        <h2 class="add-top-margin">Paper</h2>
+        <p style="font-size:14pt;">
+          <a href="https://dl.acm.org/doi/10.1145/3664476.3664497" target="_blank">Our paper</a> is accepted at ARES '24.
+        
+        <h2 class="add-top-margin">Code</h2>
+        <p style="font-size:14pt;">
+          Our code is opensourced on <a href="https://github.com/purs3lab/LLMs4GitHubWorkflows" target="_blank"> GitHub</a>. Please check out the repository for more details. 
+        </p>
+        <h2 class="add-top-margin">Bibtex</h2>
+  <pre>
+    @inproceedings{10.1145/3664476.3664497,
+      author = {Zhang, Xinyu and Muralee, Siddharth and Cherupattamoolayil, Sourag and Machiry, Aravind},
+      title = {On the Effectiveness of Large Language Models for GitHub Workflows},
+      year = {2024},
+      isbn = {9798400717185},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      url = {https://doi.org/10.1145/3664476.3664497},
+      doi = {10.1145/3664476.3664497},
+      booktitle = {Proceedings of the 19th International Conference on Availability, Reliability and Security},
+      articleno = {32},
+      numpages = {14},
+      location = {Vienna, Austria},
+      series = {ARES '24}
+    }
+  </pre>
+  </div>
+    </div>
+    <!--End LLM4GW-->
+		
+        <!--Start Credits-->
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+			<br /><br />
+            <p class="text text-small text-italic">
+              LLM4GW | <span class="highlight-text">PurS3 Lab</span> at <span class="highlight-text">Purdue University</span> | <span class="highlight-text">PurSec Lab</span> at <span class="highlight-text">Purdue University</span> | <span class="highlight-text">WSPR Lab</span> at <span class="highlight-text">North Carolina State University</span>
+            </p>
+          </div>
+        </div>
+        <!--End Credits-->
+        <!-------------------------------------------------------------------------------------------->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
